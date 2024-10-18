@@ -23,12 +23,12 @@ const Home = () => {
                     {/* Bottom Decorative Image */}
                     <img src={images.decorate2} alt="" className="h-20 w-32 absolute bottom-0 -left-4 transform" />
                     
-                    <CardContent className="py-2 p-4 sm:px-8 md:px-10 lg:px-12 xl:px-16">
+                    <CardContent className="py-2 px-8 sm:px-8 md:px-10 lg:px-12 xl:px-18">
                     <div className="flex flex-col items-center justify-center text-center gap-4">
                         {/* Profile Image */}
                         <img src={images.profile} className="h-80 w-80 sm:h-80 sm:w-60 rounded-2xl object-cover" alt="" />
                         {/* Name */}
-                        <h1 className="font-bold text-2xl sm:text-3xl md:text-4xl lg:text-3xl text-center">Angelo Guiao</h1>
+                        <h1 className="font-bold text-3xl sm:text-3xl md:text-4xl lg:text-3xl text-center">Angelo Guiao</h1>
                         {/* Description */}
                         <p className="mt-4 text-base sm:text-base md:text-lg lg:mt-6">
                         A Software Engineer who has developed countless innovative solutions.
