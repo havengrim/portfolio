@@ -26,7 +26,7 @@ const Home = () => {
                     <CardContent className="py-2 p-4 sm:px-8 md:px-10 lg:px-12 xl:px-16">
                     <div className="flex flex-col items-center justify-center text-center gap-4">
                         {/* Profile Image */}
-                        <img src={images.profile} className="h-60 w-full sm:h-48 sm:w-48 rounded-2xl object-cover" alt="" />
+                        <img src={images.profile} className="h-80 w-80 sm:h-80 sm:w-60 rounded-2xl object-cover" alt="" />
                         {/* Name */}
                         <h1 className="font-bold text-2xl sm:text-3xl md:text-4xl lg:text-3xl text-center">Angelo Guiao</h1>
                         {/* Description */}
