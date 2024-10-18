@@ -6,6 +6,9 @@ export default {
     "./src/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
+    fontFamily: {
+      poppins: ['Poppins', '"Poppins Placeholder"', 'sans-serif'], // Add your font family here
+    },
   	extend: {
   		borderRadius: {
   			lg: 'var(--radius)',
@@ -13,6 +16,8 @@ export default {
   			sm: 'calc(var(--radius) - 4px)'
   		},
   		colors: {
+        secondText: '#1C1A19',
+        customDark: '#151312',
   			background: 'hsl(var(--background))',
   			foreground: 'hsl(var(--foreground))',
   			card: {
