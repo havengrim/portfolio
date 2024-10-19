@@ -9,6 +9,15 @@
   .icons{
     @apply h-6 w-6 dark:text-gray-300;
   }
+  .main-text{
+    @apply text-[5rem] font-semibold -mt-2 dark:text-white;
+  }
+  .secondary-title{
+    @apply text-[#353334]
+  }
+  .paragraph{
+    @apply text-[#8E8584]
+  }
   :root {
     --background: hsl(0, 0%, 100%);
     --foreground: hsl(224, 71.4%, 4.1%);
@@ -75,7 +84,7 @@
 }
 
 .container-padding{
-  @apply max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8;
+  @apply max-w-7xl mx-auto px-4 sm:px-6 lg:px-28 py-8;
 }
 
 
