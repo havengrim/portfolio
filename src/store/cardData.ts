@@ -29,6 +29,20 @@ export const cardData: CardData[] = [
     description: "Customization Shirt",
     coverImage: images.cover4,
     wholeCoverImage: images.wholecover3,
-    link: "#",
+    link: "https://threejs-sand-three.vercel.app/",
+  },
+  {
+    title: "AI Bank",
+    description: "HooBank Website",
+    coverImage: images.cover5,
+    wholeCoverImage: images.wholecover4,
+    link: "https://ai-one-rust.vercel.app/",
+  },
+  {
+    title: "HiLink Travel",
+    description: "Travel Companion",
+    coverImage: images.cover6,
+    wholeCoverImage: images.wholecover5,
+    link: "https://travel-iota-ten.vercel.app/",
   },
 ];

@@ -133,7 +133,7 @@ const Home = () => {
               </div>
               
               <div className="flex flex-col gap-4">
-                {cardData.map((card, index) => (
+                {cardData.slice(0, 3).map((card, index) => (
                   <a href={card.link} key={index}>
                     {card.wholeCoverImage ? (
                       <HoverCard>
@@ -217,7 +217,7 @@ const Home = () => {
               
               <div className="flex flex-col gap-4">
                 <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
-                  {tools.map((tool, index) => (
+                  {tools.slice(0, 6).map((tool, index) => (
                     <div className="flex gap-4" key={index} data-aos="fade-up">
                       <img src={tool.tool} alt="" className="h-20 w-20" />
                       <div className="flex flex-col">
@@ -260,7 +260,7 @@ const Home = () => {
                 <h1 className="text-[2.5rem] sm:text-[3.5rem] md:text-[4rem] xl:text-[6rem] font-semibold secondary-title -mt-4">TOGETHER</h1>
               </div>
 
-              <form className="mt-4">
+              <form className="mt-4" data-aos="fade-up">
                   <div className="flex flex-col gap-4">
                       <div className="flex justify-between gap-5">
                         <div className="grid w-full max-w-sm items-center gap-1.5">
