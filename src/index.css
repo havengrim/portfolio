@@ -77,16 +77,14 @@
 }
 
 @layer base {
-  * {
-    @apply border-border;
-  }
+
   body {
-    @apply bg-background text-foreground !cursor-default;
+    @apply bg-background text-foreground !cursor-default bg-[#151312];
   }
 }
 
 .container-padding{
-  @apply sm:max-w-7xl mx-auto w-full lg:w-[calc(100%-4.5rem)] px-4 sm:px-6 lg:px-16 py-8;
+  @apply sm:max-w-7xl mx-auto w-full lg:w-[calc(100%-4.5rem)] px-4 sm:px-6 lg:px-16 py-8 ;
 }
 
 

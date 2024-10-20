@@ -27,8 +27,8 @@ const Experience = () => {
   }, []);
 
   return (
-    <div className="h-full w-full bg-customDark">
-      <div className="container-padding min-h-screen">
+    <div className="!h-full w-full bg-customDark">
+      <div className="container-padding">
         <Navbar />
         <div className="grid lg:grid-cols-3 grid-cols-1 mt-20 gap-10">
           {/* Sticky left side with card */}

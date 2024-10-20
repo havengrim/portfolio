@@ -27,12 +27,12 @@ const Projects = () => {
   }, []);
 
   return (
-    <div className="h-full w-full bg-customDark">
-      <div className="container-padding min-h-screen">
+    <div className="!h-full w-full bg-customDark">
+      <div className="container-padding">
         <Navbar />
         <div className="grid lg:grid-cols-3 grid-cols-1 mt-20 gap-10">
           {/* Sticky left side with card */}
-          <div className="lg:w-full sm:w-full sm:h-full md:w-full" data-aos="fade-up">
+          <div className="h-full w-full" data-aos="fade-up">
             <Card className="border-none dark:bg-white py-4 lg:sticky lg:top-10  w-full overflow-hidden relative">
               {/* Top Decorative Image */}
               <img src={images.decorate} alt="" className="h-20 w-32 absolute top-0 transform -translate-y-1/2" />
