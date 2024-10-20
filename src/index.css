@@ -86,7 +86,7 @@
 }
 
 .container-padding{
-  @apply max-w-7xl mx-auto px-4 sm:px-6 lg:px-28 py-8;
+  @apply sm:max-w-7xl mx-auto w-full lg:w-[calc(100%-4.5rem)] px-4 sm:px-6 lg:px-16 py-8;
 }
 
 
