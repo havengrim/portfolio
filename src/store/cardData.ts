@@ -22,7 +22,7 @@ export const cardData: CardData[] = [
     description: "Real Estate Platform",
     coverImage: images.cover2,
     wholeCoverImage: images.wholecover2,
-    link: "https://ui.academelms.com/",
+    link: "https://cassareal.com/",
   },
   {
     title: "3D Shirt",
@@ -45,4 +45,12 @@ export const cardData: CardData[] = [
     wholeCoverImage: images.wholecover5,
     link: "https://travel-iota-ten.vercel.app/",
   },
+  {
+    title: "The18 Manager",
+    description: "Business Tracker",
+    coverImage: images.cover7,
+    wholeCoverImage: images.wholecover6,
+    link: "https://the18.vercel.app/",
+  },
 ];
+
