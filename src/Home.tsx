@@ -1,13 +1,17 @@
 import Navbar from "./components/Navbar";
 import images from "./assets/images";
-import { RiFacebookCircleLine } from "react-icons/ri";
-import { LuInstagram } from "react-icons/lu";
-import { PiLinkedinLogo } from "react-icons/pi";
+import { FaFacebook } from "react-icons/fa";
+import { RiInstagramFill } from "react-icons/ri";
+import { FaLinkedin } from "react-icons/fa";
 import { FaGithub } from "react-icons/fa";
 import CountUp from "react-countup";
 import { useEffect } from 'react';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
+import { RiStackLine } from 'react-icons/ri';
+import { CiGrid31 } from "react-icons/ci";
+import { MdArrowForward } from "react-icons/md";
+import { MdArrowOutward } from "react-icons/md";
 import {
   Card,
   CardContent
@@ -43,9 +47,9 @@ const Home = () => {
                   </p>
                   {/* Social Media Icons */}
                   <div className="flex justify-center gap-3 mt-4">
-                    <RiFacebookCircleLine className="h-8 w-8 text-[#F46C38]" />
-                    <LuInstagram className="h-8 w-8 text-[#F46C38]" />
-                    <PiLinkedinLogo className="h-8 w-8 text-[#db6e42]" />
+                    <FaFacebook className="h-8 w-8 text-[#F46C38]" />
+                    <RiInstagramFill className="h-8 w-8 text-[#F46C38]" />
+                    <FaLinkedin className="h-8 w-8 text-[#db6e42]" />
                     <FaGithub className="h-8 w-8 text-[#F46C38]" />
                   </div>
                 </div>
@@ -93,19 +97,84 @@ const Home = () => {
                 </div>
               </div>
 
-              <div className="grid grid-cols-3 gap-4 w-full">
+              <div className="grid grid-cols-2 gap-4 w-full">
                   <div >
-                    <Card className="dark:bg-[#F46C38]">
-                      <CardContent className="py-2">
-                        sds
+                    <Card className="dark:bg-[#F46C38] relative">
+                      <img src={images.decorate3} alt="Decoration" className="absolute top-0" />
+                      <img src={images.decorate3} alt="Decoration" className="absolute bottom-0" />
+                      <CardContent className="py-4 flex flex-col gap-5">
+                        <RiStackLine className="h-10 w-10 mt-10" />
+                        <span className="text-2xl max-w-[12rem]">DYNAMIC ANIMATION, MOTION DESIGN</span>
+                        <div className="px-1 py-1 border cursor-pointer w-11 flex justify-center self-end rounded-md">
+                          <MdArrowForward className="w-6 h-6"/>
+                        </div>            
                       </CardContent>
                     </Card>
                   </div>
-                  <div className="col-span-2">
-                  <Card>
-                      sds
+                  <div className="">
+                    <Card className="dark:bg-[#C5FF41] relative">
+                      <img src={images.decorate3} alt="Decoration" className="absolute top-0" />
+                      <img src={images.decorate3} alt="Decoration" className="absolute bottom-0" />
+                      <CardContent className="py-4 flex flex-col gap-5 dark:text-black">
+                        <CiGrid31 className="h-10 w-10 mt-10" />
+                        <span className="text-2xl max-w-[12rem]">
+                        FRAMER, FIGMA, WORDPRESS, REACTJS</span>
+                        <div className="px-1 py-1 border cursor-pointer w-11 flex justify-center self-end rounded-md">
+                          <MdArrowForward className="w-6 h-6"/>
+                        </div>            
+                      </CardContent>
                     </Card>
                   </div>
+                </div>
+                <div className="flex flex-col items-start mt-14">
+                  <h1 className="text-[6rem] font-semibold -mt-2 dark:text-white leading-none">RECENT</h1>
+                  <h1 className="text-[5.3rem] font-semibold secondary-title -mt-4">PROJECTS</h1>
+              </div>
+              <div className="flex flex-col gap-4">
+                  <Card className="border-none dark:hover:bg-[#252425] relative">
+                    <MdArrowOutward className="absolute right-4 top-4 h-6 w-6 text-[#F46C38]"/>
+                      <div className="flex gap-4 items-center p-4">
+                        <img src={images.cover1} alt="" className="h-32 w-36 rounded-lg" />
+                        <div className="flex flex-col gap-1">
+                          <span className="font-semibold text-2xl">
+                            CassaReal
+                          </span>
+                          <span className="font-semibold text-base paragraph">
+                            Real Estate Platform
+                          </span>
+                        </div>
+                      </div>
+                  </Card>
+
+                  <Card className="border-none dark:hover:bg-[#252425] relative">
+                    <MdArrowOutward className="absolute right-4 top-4 h-6 w-6 text-[#F46C38]"/>
+                      <div className="flex gap-4 items-center p-4">
+                        <img src={images.cover1} alt="" className="h-32 w-36 rounded-lg" />
+                        <div className="flex flex-col gap-1">
+                          <span className="font-semibold text-2xl">
+                            CassaReal
+                          </span>
+                          <span className="font-semibold text-base paragraph">
+                            Real Estate Platform
+                          </span>
+                        </div>
+                      </div>
+                  </Card>
+                  <Card className="border-none dark:hover:bg-[#252425] relative">
+                    <MdArrowOutward className="absolute right-4 top-4 h-6 w-6 text-[#F46C38]"/>
+                      <div className="flex gap-4 items-center p-4">
+                        <img src={images.cover1} alt="" className="h-32 w-36 rounded-lg" />
+                        <div className="flex flex-col gap-1">
+                          <span className="font-semibold text-2xl">
+                            CassaReal
+                          </span>
+                          <span className="font-semibold text-base paragraph">
+                            Real Estate Platform
+                          </span>
+                        </div>
+                      </div>
+                  </Card>
+                  
               </div>
             </div>
 

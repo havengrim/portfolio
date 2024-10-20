@@ -44,6 +44,7 @@
     --chart-3: hsl(197, 37%, 24%);
     --chart-4: hsl(43, 74%, 66%);
     --chart-5: hsl(27, 87%, 67%);
+    --cursor-color: #000000;
   }
 
   .dark {
@@ -71,6 +72,7 @@
     --chart-3: hsl(30, 80%, 55%);
     --chart-4: hsl(280, 65%, 60%);
     --chart-5: hsl(340, 75%, 55%);
+    --cursor-color: #ffffff;
   }
 }
 
@@ -79,7 +81,7 @@
     @apply border-border;
   }
   body {
-    @apply bg-background text-foreground;
+    @apply bg-background text-foreground !cursor-default;
   }
 }
 
@@ -91,3 +93,4 @@
 body {
   font-family: 'Poppins', 'Poppins Placeholder', sans-serif;
 }
+
